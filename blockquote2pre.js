@@ -10,7 +10,5 @@ document.addEventListener('DOMContentLoaded', function() {
   
       // 替换原来的块引用元素为预备的pre元素
       blockquote.parentNode.replaceChild (pre, blockquote);
-  });  
-
-  PR.prettyPrint()
+  }); 
 });
