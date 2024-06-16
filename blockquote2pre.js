@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
   blockquotes.forEach (function(blockquote) {
       // 创建一个新的code元素，并将blockquote的内容复制进去
       var code = document.createElement ('code');    
-      code.innerText  = blockquote.innerText;
+      code.innerHTML  = blockquote.innerHTML;
     
       // 创建一个新的pre元素，并将code元素添加为其子元素
       var pre = document.createElement ('pre');
