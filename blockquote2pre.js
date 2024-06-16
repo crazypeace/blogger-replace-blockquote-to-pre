@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
   // 添加 复制按钮
   // 注意, 相应的需要添加CSS
   // 来源: https://yihui.org/en/2023/09/copy-button/
-  /*
   (e=>{
     const t = e.currentScript?.dataset;
     e.querySelectorAll(t?.selector || "pre>code").forEach((t=>{
@@ -43,7 +42,6 @@ document.addEventListener('DOMContentLoaded', function() {
     ))
   }
   )(document);
-  */
 
   // 使用 https://highlightjs.org/ 代码高亮方案
   // hljs.highlightAll();
