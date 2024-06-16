@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
       // 添加 class 属性
       // 不使用google prettyprint了
-      // pre.setAttribute ('class', 'prettyprint');
+      pre.setAttribute ('class', 'prettyprint');
     
       // 替换原来的blockquote元素为pre元素
       blockquote.parentNode.replaceChild (pre, blockquote);
