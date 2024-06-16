@@ -42,14 +42,4 @@ document.addEventListener('DOMContentLoaded', function() {
       ))
   }
   )(document);
-
-  // 使用 https://highlightjs.org/ 代码高亮方案
-  // hljs.highlightAll();
-
-  // 使用 prism.js 代码高亮方案
-  // Prism.highlightAll();
-  // 手动调用prism插件
-  // Prism.plugins.load(autoloader);
-  // Prism.plugins.load(toolbar);
-  // Prism.plugins.load(copy-to-clipboard);
 });
