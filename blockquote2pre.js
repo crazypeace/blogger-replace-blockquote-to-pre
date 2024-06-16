@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
       blockquote.parentNode.replaceChild (pre, blockquote);
   }); 
 
+  /*
   (e=>{
     const t = e.currentScript?.dataset;
     e.querySelectorAll(t?.selector || "pre>code").forEach((t=>{
@@ -39,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
     ))
   }
   )(document);
+  */
 
-  hljs.highlightAll();
+  // hljs.highlightAll();
 });
