@@ -13,13 +13,16 @@ document.addEventListener('DOMContentLoaded', function() {
       pre.appendChild(code);
     
       // 添加 class 属性
+      // 不使用google prettyprint了
       // pre.setAttribute ('class', 'prettyprint');
     
       // 替换原来的blockquote元素为pre元素
       blockquote.parentNode.replaceChild (pre, blockquote);
   }); 
 
-  /*
+  // 添加 复制按钮
+  // 注意, 相应的需要添加CSS
+  // 来源: https://yihui.org/en/2023/09/copy-button/
   (e=>{
     const t = e.currentScript?.dataset;
     e.querySelectorAll(t?.selector || "pre>code").forEach((t=>{
@@ -40,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
     ))
   }
   )(document);
-  */
 
-  // hljs.highlightAll();
+  // 使用 https://highlightjs.org/ 代码高亮方案
+  hljs.highlightAll();
 });
