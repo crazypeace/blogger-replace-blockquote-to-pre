@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
       pre.appendChild(code);
     
       // 添加 class 属性
-      // 不使用google prettyprint了
       code.setAttribute ('class', 'prettyprint');
     
       // 替换原来的blockquote元素为pre元素
@@ -47,8 +46,8 @@ document.addEventListener('DOMContentLoaded', function() {
   */
 
   // 使用 https://highlightjs.org/ 代码高亮方案
-  // hljs.configure({useBR: true});
-  // hljs.highlightAll();
+  hljs.configure({useBR: true});
+  hljs.highlightAll();
 
   // 使用 prism.js 代码高亮方案
   // Prism.highlightAll();
