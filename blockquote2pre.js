@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // 使用 https://highlightjs.org/ 代码高亮方案
   hljs.configure({useBR: true});
   hljs.highlightAll();
+  hljs.configure({useBR: true});
 
   // 使用 prism.js 代码高亮方案
   // Prism.highlightAll();
