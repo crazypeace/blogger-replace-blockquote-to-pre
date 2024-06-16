@@ -40,4 +40,5 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   )(document);
 
+  hljs.highlightAll();
 });
