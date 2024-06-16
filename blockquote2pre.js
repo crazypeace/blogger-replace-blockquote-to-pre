@@ -8,12 +8,12 @@ document.addEventListener('DOMContentLoaded', function() {
       var code = document.createElement ('code');    
       code.innerHTML  = blockquote.innerHTML;
     
+      // 添加 class 属性
+      code.setAttribute ('class', 'prettyprint');
+    
       // 创建一个新的pre元素，并将code元素添加为其子元素
       var pre = document.createElement ('pre');
       pre.appendChild(code);
-    
-      // 添加 class 属性
-      code.setAttribute ('class', 'prettyprint');
     
       // 替换原来的blockquote元素为pre元素
       blockquote.parentNode.replaceChild (pre, blockquote);
