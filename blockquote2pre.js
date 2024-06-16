@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
       pre.appendChild(code);
     
       // 添加 class 属性
-      pre.setAttribute ('class', 'prettyprint');
+      // pre.setAttribute ('class', 'prettyprint');
     
       // 替换原来的blockquote元素为pre元素
       blockquote.parentNode.replaceChild (pre, blockquote);
