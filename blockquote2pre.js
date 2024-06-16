@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
   blockquotes.forEach (function(blockquote) {
       // 创建一个新的code元素，并将blockquote的内容复制进去
       var code = document.createElement ('code');    
-      code.innerHTML  = blockquote.innerHTML ;
+      code.innerText  = blockquote.innerText;
     
       // 创建一个新的pre元素，并将code元素添加为其子元素
       var pre = document.createElement ('pre');
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // 使用 https://highlightjs.org/ 代码高亮方案
   // hljs.configure({useBR: true});
-  // hljs.highlightAll();
+  hljs.highlightAll();
 
   // 使用 prism.js 代码高亮方案
   // Prism.highlightAll();
