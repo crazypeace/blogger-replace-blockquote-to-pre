@@ -1,3 +1,9 @@
+# 更新
+
+添加复制按钮
+
+https://zelikk.blogspot.com/2024/06/blogspot-pre-code-copy-button.html
+
 # 在blogspot中实现代码高亮
 
 将blockquote(引用)替换为pre, 配合code-prettify项目, 以实现代码高亮.
