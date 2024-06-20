@@ -4,9 +4,12 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // 遍历每个blockquote元素
   blockquotes.forEach (function(blockquote) {
-      // 创建一个新的p元素，将blockquote元素添加为其子元素
+      // 创建一个新的blockquote元素，并将旧的blockquote的内容复制进去
+      var bq = document.createElement ('blockquote');    
+      bq.innerHTML  = blockquote.innerHTML;
+      // 创建一个新的p元素，将新的blockquote元素添加为其子元素
       var p = document.createElement ('p');
-      p.appendChild(blockquote);
+      p.appendChild(bq);
     
       // 替换原来的blockquote元素为p元素
       blockquote.parentNode.replaceChild (p, blockquote);
