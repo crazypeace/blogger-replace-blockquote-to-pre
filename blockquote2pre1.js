@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
   blockquotes.forEach (function(blockquote) {
       // 创建一个新的code元素，并将blockquote的内容复制进去
       var code = document.createElement ('code');    
-      code.innerHTML  = blockquote.innerHTML.replace(/<br\s*\/?>/gi, '\n');
+      code.innerHTML  = blockquote.innerHTML;
     
       // 添加 class 属性
       code.setAttribute ('class', 'prettyprint');
